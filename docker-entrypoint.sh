@@ -3,9 +3,9 @@ echo "Starting the Selenium Side Runner Action"
 
 sleep 5
 
-mkdir /out
+mkdir out
 
-selenium-side-runner -s http://chromedriver:4444 --output-directory /out /sides/*.side
+selenium-side-runner -s http://chromedriver:4444 --output-directory out /sides/*.side
 
 
 if [ -n "${INPUT_SIDE-DIRECTORY}" ]; then
