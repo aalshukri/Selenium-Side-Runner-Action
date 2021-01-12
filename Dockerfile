@@ -8,11 +8,8 @@ ADD docker-entrypoint.sh /opt/bin/docker-entrypoint.sh
 RUN chmod +x /opt/bin/docker-entrypoint.sh
 
 RUN mkdir /sides
-RUN mkdir /out
-
-RUN ls -l
 
 #WORKDIR /root
-#VOLUME [ "/sides" ]
+VOLUME [ "/sides" ]
 
 CMD "/opt/bin/docker-entrypoint.sh"
