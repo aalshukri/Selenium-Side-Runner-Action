@@ -9,7 +9,7 @@ RUN chmod +x /opt/bin/docker-entrypoint.sh
 
 RUN mkdir /sides
 
-#WORKDIR /root
+WORKDIR /root
 VOLUME [ "/sides" ]
 
 CMD "/opt/bin/docker-entrypoint.sh"
