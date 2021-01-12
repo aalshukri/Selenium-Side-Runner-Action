@@ -8,3 +8,15 @@ selenium-side-runner -s http://chromedriver:4444 --output-directory /out /sides/
 ls -l
 
 ls /out
+
+
+if [ -z "${INPUT_SIDE-DIRECTORY}" ]; then
+  echo "::debug::Input side directory provided."
+  echo "::debug::Using \"${INPUT_SIDE-DIRECTORY}\" as a side source file directory"
+fi 
+
+if [ -z "${INPUT_OUTPUT-DIRECTORY}" ]; then
+  echo "::debug::Input output directory provided."
+  echo "::debug::Using \"${INPUT_OUTPUT-DIRECTORY}\" as an output directory"
+fi 
+
