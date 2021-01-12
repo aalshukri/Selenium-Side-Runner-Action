@@ -1,0 +1,10 @@
+on: push
+name: Test Selenium Side Runner Action
+jobs:
+  Selenium-Side-Runner:
+    name: Selenium-Side-Runner
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+    - name: Selenium-Side-Runner-Action
+      uses: aalshukri/Selenium-Side-Runner-Action@master
