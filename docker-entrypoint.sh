@@ -12,7 +12,7 @@ if [ -n "${INPUT_SIDE-DIRECTORY}" ]; then
   echo "::debug::Input side directory provided."
   echo "::debug::Using \"${INPUT_SIDE-DIRECTORY}\" as a side source file directory"
 else
-  echo "::debug::Input side directory not provided."  
+  echo "::debug::Input side directory not provided. Using default"  
 fi 
 
 if [ -n "${INPUT_OUTPUT-DIRECTORY}" ]; then
@@ -23,5 +23,7 @@ else
 fi 
 
 ls -l
+
+ls out
 
 pwd
