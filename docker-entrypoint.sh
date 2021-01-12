@@ -11,14 +11,17 @@ selenium-side-runner -s http://chromedriver:4444 --output-directory /out /sides/
 if [ -n "${INPUT_SIDE-DIRECTORY}" ]; then
   echo "::debug::Input side directory provided."
   echo "::debug::Using \"${INPUT_SIDE-DIRECTORY}\" as a side source file directory"
-elif
+else
   echo "::debug::Input side directory not provided."  
 fi 
 
 if [ -n "${INPUT_OUTPUT-DIRECTORY}" ]; then
   echo "::debug::Input output directory provided."
   echo "::debug::Using \"${INPUT_OUTPUT-DIRECTORY}\" as an output directory"
-elif
+else
   echo "::debug::Input output directory not provided."  
 fi 
 
+ls -l
+
+pwd
