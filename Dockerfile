@@ -10,6 +10,8 @@ RUN chmod +x /opt/bin/docker-entrypoint.sh
 RUN mkdir /sides
 RUN mkdir /out
 
+RUN ls -l
+
 #WORKDIR /root
 #VOLUME [ "/sides" ]
 
