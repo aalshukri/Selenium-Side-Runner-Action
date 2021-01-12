@@ -1,0 +1,16 @@
+name: 'Selenium Side Runner Action'
+description: 'Selenium Side Runner using Github Actions'
+author: 'Ayesh Alshukri'
+inputs:
+  side-directory:
+    description: The desired location of your `.side` files (default is 'sides/*').
+    required: false
+  output-directory:
+    description: The desired location of the output of running side files (default 'out/'). 
+    required: false    
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'upload-cloud'
+  color: 'orange'
